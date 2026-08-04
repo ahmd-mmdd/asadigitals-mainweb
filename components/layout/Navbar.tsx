@@ -8,7 +8,7 @@ import { site } from "@/data/site";
 const links = [
   { href: "#services", label: "Layanan" },
   { href: "#portfolio", label: "Portofolio" },
-  { href: "#process", label: "SOP" },
+  { href: "#process", label: "Workflow" },
   { href: "#testimonials", label: "Testimoni" },
   { href: "#faq", label: "FAQ" },
 ];
@@ -74,7 +74,7 @@ export function Navbar() {
             href="#contact"
             className="hidden rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 transition hover:-translate-y-0.5 hover:bg-accent-hover md:inline-block"
           >
-            Kolaborasi
+            Reservasi
           </a>
         </div>
       </div>

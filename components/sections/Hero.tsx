@@ -93,7 +93,7 @@ export function Hero() {
                 href={site.bookCallUrl}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/25 bg-white/10 px-7 py-3.5 text-[15px] font-semibold text-white backdrop-blur-md transition hover:bg-white/20"
               >
-                <CalendarDays size={17} /> Jadwalkan Kolaborasi
+                <CalendarDays size={17} /> Jadwalkan Reservasi
               </a>
             </MagneticButton>
           </motion.div>
