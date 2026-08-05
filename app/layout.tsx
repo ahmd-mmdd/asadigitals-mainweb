@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://arslanasif9t9.github.io/lailahassan"),
+  metadataBase: new URL("www.asacreative.space"),
   title: {
     default: "Asa Creative Space - Dream, Imagine, Make it True",
     template: "%s · Asa Creative Space",
