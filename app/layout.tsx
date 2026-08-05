@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Asa Digital Space",
+    title: "Asa Creative Space",
   },
 };
 

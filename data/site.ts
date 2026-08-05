@@ -1,5 +1,5 @@
 export const site = {
-  name: "Asa Digitals",
+  name: "Asa Creative Space",
   tagline: "Dream, Imagine, Make it True",
   // TODO: replace with Laila's real email when available
   email: "work.ahmd025@gmail.com",
@@ -10,11 +10,11 @@ export const site = {
   heroVideo: "",
   heroPoster: "",
   socials: [
-    { label: "Instagram", href: "https://instagram.com/", icon: "instagram" },
+    { label: "Instagram", href: "https://instagram.com/asacreative.space", icon: "instagram" },
     { label: "LinkedIn", href: "https://linkedin.com/", icon: "linkedin" },
     { label: "YouTube", href: "https://youtube.com/", icon: "youtube" },
     { label: "Behance", href: "https://behance.net/", icon: "behance" },
-    { label: "Email", href: "mailto:hello@lailahassan.studio", icon: "mail" },
+    { label: "Email", href: "mailto:work.ahmd025@gmail.com", icon: "mail" },
   ],
   trustedBy: [
     "Kreator",
