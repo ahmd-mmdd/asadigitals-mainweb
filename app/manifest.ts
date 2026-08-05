@@ -7,8 +7,8 @@ const bp = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Asa Digital Space - Dream, Imagine, Make it True",
-    short_name: "Asa Digitals",
+    name: "Asa Creative Space - Dream, Imagine, Make it True",
+    short_name: "Asa Creative",
     description:
       "Jasa editing video premium untuk brand, kreator, dan agensi. Mengubah footage mentah menjadi konten yang menarik, profesional, dan dirancang untuk menghasilkan lebih banyak engagement dan konversi.",
     start_url: `${bp}/`,

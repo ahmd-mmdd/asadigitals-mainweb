@@ -21,8 +21,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://arslanasif9t9.github.io/lailahassan"),
   title: {
-    default: "Asa Digital Space - Dream, Imagine, Make it True",
-    template: "%s · Asa Digital Space",
+    default: "Asa Creative Space - Dream, Imagine, Make it True",
+    template: "%s · Asa Creative Space",
   },
   description:
     "Your Footage. Our Craft. Kami mengubah footage mentah menjadi konten yang menghasilkan konversi tinggi. Jasa editing video profesional untuk brand, bisnis, kreator, dan agensi. mulai dari video long-form, short video, iklan, properti, corporate, hingga motion graphics.",
@@ -35,16 +35,16 @@ export const metadata: Metadata = {
     "motion graphics",
   ],
   openGraph: {
-    title: "Asa Digital Space - Dream, Imagine, Make it True",
+    title: "Asa Creative Space - Dream, Imagine, Make it True",
     description:
       "Jasa editing video profesional untuk brand, bisnis, kreator, dan agensi. Hasil visual berkualitas sinematik, editing yang bikin penonton terus menonton, dan proses pengerjaan yang efisien.",
     type: "website",
     locale: "en_US",
-    siteName: "Asa Digital Space",
+    siteName: "Asa Creative Space",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Asa Digital Space - Dream, Imagine, and Make it True",
+    title: "Asa Creative Space - Dream, Imagine, and Make it True",
     description:
       "Your Footage. Our Craft. Kami mengubah footage mentah menjadi konten yang menghasilkan konversi tinggi. Jasa editing video profesional untuk brand, bisnis, kreator, dan agensi. mulai dari video long-form, short video, iklan, properti, corporate, hingga motion graphics.",
   },
