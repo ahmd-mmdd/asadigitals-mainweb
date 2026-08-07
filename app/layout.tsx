@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
+
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { LenisProvider } from "@/components/providers/LenisProvider";
 import { Navbar } from "@/components/layout/Navbar";
@@ -19,13 +20,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("www.asacreative.space"),
+  metadataBase: new URL("https://www.asacreative.space"),
+
   title: {
     default: "Asa Creative Space - Dream, Imagine, Make it True",
     template: "%s · Asa Creative Space",
   },
+
   description:
-    "Your Footage. Our Craft. Kami mengubah footage mentah menjadi konten yang menghasilkan konversi tinggi. Jasa editing video profesional untuk brand, bisnis, kreator, dan agensi. mulai dari video long-form, short video, iklan, properti, corporate, hingga motion graphics.",
+    "Your Footage. Our Craft. Kami mengubah footage mentah menjadi konten yang menghasilkan konversi tinggi. Jasa editing video profesional untuk brand, bisnis, kreator, dan agensi. Mulai dari video long-form, short video, iklan, properti, corporate, hingga motion graphics.",
+
   keywords: [
     "video editing",
     "video editor",
@@ -34,6 +38,7 @@ export const metadata: Metadata = {
     "ad editing",
     "motion graphics",
   ],
+
   openGraph: {
     title: "Asa Creative Space - Dream, Imagine, Make it True",
     description:
@@ -42,12 +47,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Asa Creative Space",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Asa Creative Space - Dream, Imagine, and Make it True",
     description:
-      "Your Footage. Our Craft. Kami mengubah footage mentah menjadi konten yang menghasilkan konversi tinggi. Jasa editing video profesional untuk brand, bisnis, kreator, dan agensi. mulai dari video long-form, short video, iklan, properti, corporate, hingga motion graphics.",
+      "Your Footage. Our Craft. Kami mengubah footage mentah menjadi konten yang menghasilkan konversi tinggi. Jasa editing video profesional untuk brand, bisnis, kreator, dan agensi. Mulai dari video long-form, short video, iklan, properti, corporate, hingga motion graphics.",
   },
+
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
@@ -63,7 +70,21 @@ export const viewport: Viewport = {
 };
 
 /* Runs before paint — prevents theme flash */
-const themeInit = `(function(){try{var t=localStorage.getItem("theme");if(t!=="dark"&&t!=="light"){t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",t)}catch(e){}})()`;
+const themeInit = `
+(function(){
+  try {
+    var t = localStorage.getItem("theme");
+
+    if (t !== "dark" && t !== "light") {
+      t = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    }
+
+    document.documentElement.setAttribute("data-theme", t);
+  } catch(e) {}
+})()
+`;
 
 export default function RootLayout({
   children,
@@ -71,15 +92,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} antialiased`} suppressHydrationWarning>
-      <body className="min-h-svh">
-        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+    <html
+      lang="en"
+      className={`${spaceGrotesk.variable} ${inter.variable} antialiased`}
+      suppressHydrationWarning
+    >
+      <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+
+      <body>
         <ThemeProvider>
           <LenisProvider>
             <Navbar />
-            {children}
-            <Footer />
             <BottomNav />
+
+            {children}
+
+            <Footer />
           </LenisProvider>
         </ThemeProvider>
       </body>
