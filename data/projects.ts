@@ -60,6 +60,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "pbak-aftermovie",
+    title: "AFTER MOVIE PBAK FPK UINSA 2026",
+    meta: "Dokumentasi Kegiatan",
+    tag: "Ultimate",
+    categories: ["dokumentasi-acara"],
+    youtubeId: "1C6kt-cz93c",
+    thumbnail: "",
+    gradient: "linear-gradient(135deg,#1e3a8a,#2563eb)",
+    label: "AFTER MOVIE",
+    description:
+      "Project ini bekerja sama dengan Digital Media Management Humas FPK UINSA",
+    clientGoal:
+      "Klien berekspektasi bisa mengabadikan momen & mengulang momen melalui video",
+    software: ["Premiere Pro", "After Effect"],
+  },
+  {
     id: "Wedding-Docum",
     title: "Bella & Nuzul Wedding Documentations",
     meta: "Dokumentasi Kegiatan",
